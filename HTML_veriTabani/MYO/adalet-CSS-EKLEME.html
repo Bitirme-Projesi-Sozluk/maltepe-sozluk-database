@@ -7,121 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <style>
-      .enable-circle {
-        list-style-type: circle;
-      }
-
-      body {
-        background-color: #1b1c1f;
-      }
-
-      header {
-        background-color: #fe7879;
-        border-radius: 20px;
-        padding: 15px;
-      }
-
-      h1,
-      h2 {
-        text-align: center;
-        color: #eee;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .tanim {
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        color: #eee;
-        background-color: #494b4d;
-        padding: 20px;
-      }
-
-      .image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-        border: 5px solid #1b1c1f;
-        border-radius: 30px;
-      }
-
-      hr {
-        margin: 10px;
-      }
-
-      .guzel-renk {
-        background-color: #fe7879;
-        border-radius: 20px;
-        padding: 15px;
-      }
-
-      table {
-        border: 5px solid #111;
-        border-collapse: collapse;
-        width: 95%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #494b4d;
-      }
-
-      tr,
-      td {
-        color: #eee;
-      }
-
-      ul {
-        list-style-type: none;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #434447;
-        color: #eee;
-        padding: 15px;
-      }
-
-      .columns {
-        float: left;
-        width: 32.48%;
-        padding: 5px;
-      }
-
-      .price {
-        list-style-type: none;
-        border: 1px solid #eee;
-        margin: 0;
-        padding: 0;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-      }
-
-      .price:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-      }
-
-      .price .header {
-        background-color: #111;
-        color: white;
-        font-size: 25px;
-      }
-
-      .price li {
-        border-bottom: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .price .grey {
-        background-color: #eee;
-        font-size: 20px;
-      }
-    </style>
-
-    <header>
+    <header class="guzel-renk">
       <ul>
         <li>
           <h1>Bölüm Hakkında</h1>
@@ -158,57 +44,61 @@
           <h2>Danışma Kurulu</h2>
         </li>
         <li>
-          <table border="4" ;>
-            <tr>
-              <td style="color: #111"><b>Adı Soyadı</b></td>
-              <td style="color: #111"><b>Çalıştığı Firma</b></td>
-              <td style="color: #111"><b>Görev/Pozisyon</b></td>
-            </tr>
-            <tr>
-              <td>Mustafa Ülkü CANER</td>
-              <td>Avusturya Cumhuriyeti Fahri Konsolosluğu /İzmir Barosu</td>
-              <td>Avusturya Cumhuriyet İzmir Fahri Konsolosu</td>
-            </tr>
-            <tr>
-              <td>Uğur DEMİRCAN</td>
-              <td>Demiray Hukuk Bürosu</td>
-              <td>Kurucu Ortak/Avukat</td>
-            </tr>
-            <tr>
-              <td>Burcu ÇOTUKSÖKEN</td>
-              <td>Çotuksöken Hukuk Bürosu</td>
-              <td>Avukat</td>
-            </tr>
-            <tr>
-              <td>Ahmet Emre YÜKSEL</td>
-              <td>Maltepe Üniversitesi</td>
-              <td>Bölüm Başkanı / Öğretim Görevlisi</td>
-            </tr>
-            <tr>
-              <td>Seden DÜRÜSTKAN</td>
-              <td>Maltepe Üniversitesi</td>
-              <td>Öğretim Görevlisi</td>
-            </tr>
-            <tr>
-              <td>Sena VURAL</td>
-              <td>Maltepe Üniversitesi</td>
-              <td>Öğretim Görevlisi</td>
-            </tr>
-            <tr>
-              <td>Sinem Gül BAYRAKDAR</td>
-              <td>Maltepe Üniversitesi</td>
-              <td>Öğretim Görevlisi</td>
-            </tr>
-            <tr>
-              <td>Ayten İdil RAMAZANOĞLU</td>
-              <td>İstanbul Barosu'na Bağlı Serbest Avukat</td>
-              <td>Avukat</td>
-            </tr>
-            <tr>
-              <td>Özge HANAVDELOĞULLARI</td>
-              <td>Hukuk Fakültesi Öğrencisi</td>
-              <td>Eski Mezun/Hukuk Fakültesi Öğrencisi</td>
-            </tr>
+          <table class="table">
+            <thead>
+              <tr>
+                <td style="color: #111"><b>Adı Soyadı</b></td>
+                <td style="color: #111"><b>Çalıştığı Firma</b></td>
+                <td style="color: #111"><b>Görev/Pozisyon</b></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mustafa Ülkü CANER</td>
+                <td>Avusturya Cumhuriyeti Fahri Konsolosluğu /İzmir Barosu</td>
+                <td>Avusturya Cumhuriyet İzmir Fahri Konsolosu</td>
+              </tr>
+              <tr>
+                <td>Uğur DEMİRCAN</td>
+                <td>Demiray Hukuk Bürosu</td>
+                <td>Kurucu Ortak/Avukat</td>
+              </tr>
+              <tr>
+                <td>Burcu ÇOTUKSÖKEN</td>
+                <td>Çotuksöken Hukuk Bürosu</td>
+                <td>Avukat</td>
+              </tr>
+              <tr>
+                <td>Ahmet Emre YÜKSEL</td>
+                <td>Maltepe Üniversitesi</td>
+                <td>Bölüm Başkanı / Öğretim Görevlisi</td>
+              </tr>
+              <tr>
+                <td>Seden DÜRÜSTKAN</td>
+                <td>Maltepe Üniversitesi</td>
+                <td>Öğretim Görevlisi</td>
+              </tr>
+              <tr>
+                <td>Sena VURAL</td>
+                <td>Maltepe Üniversitesi</td>
+                <td>Öğretim Görevlisi</td>
+              </tr>
+              <tr>
+                <td>Sinem Gül BAYRAKDAR</td>
+                <td>Maltepe Üniversitesi</td>
+                <td>Öğretim Görevlisi</td>
+              </tr>
+              <tr>
+                <td>Ayten İdil RAMAZANOĞLU</td>
+                <td>İstanbul Barosu'na Bağlı Serbest Avukat</td>
+                <td>Avukat</td>
+              </tr>
+              <tr>
+                <td>Özge HANAVDELOĞULLARI</td>
+                <td>Hukuk Fakültesi Öğrencisi</td>
+                <td>Eski Mezun/Hukuk Fakültesi Öğrencisi</td>
+              </tr>
+            </tbody>
           </table>
         </li>
         <li></li>
@@ -313,43 +203,211 @@
 
     <hr />
 
-    <div class="guzel-renk">
-      <ul>
-        <li>
-          <h2>Adalet</h2>
-        </li>
-        <li>
-          <div class="columns">
-            <ul class="price">
-              <li class="header">Ücretli</li>
-              <li style="color: #111" class="grey">
-                32.076 ₺ (KDV Dahil) / Yıllık
-              </li>
-            </ul>
-          </div>
+    <div class="row guzel-renk">
+      
+      <div class="column">
+        <div class="card">
+          <ul class="price">
+            <li class="header">Ücretli</li>
+            <li style="color: #111" class="grey">
+              32.076 ₺ (KDV Dahil) / Yıllık
+            </li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="columns">
-            <ul class="price">
-              <li class="header">%50 İndirimli</li>
-              <li style="color: #111" class="grey">
-                14.958 ₺ (KDV Dahil) / Yıllık
-              </li>
-            </ul>
-          </div>
+      <div class="column">
+        <div class="card">
+          <ul class="price">
+            <li class="header">%50 İndirimli</li>
+            <li style="color: #111" class="grey">
+              14.958 ₺ (KDV Dahil) / Yıllık
+            </li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="columns">
-            <ul class="price">
-              <li class="header">Ücretsiz</li>
-              <li style="color: #111" class="grey">-</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <span>*2021-2022 Ücretidir.<br /></span>
-        </li>
-      </ul>
+      <div class="column">
+        <div class="card">
+          <ul class="price">
+            <li class="header">Ücretsiz</li>
+            <li style="color: #111" class="grey">-</li>
+          </ul>
+        </div>
+      </div>
+      <span>*2021-2022 Ücretidir.<br /></span>
+
     </div>
+    
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .enable-circle {
+        list-style-type: circle;
+      }
 
-    <hr />
+      body {
+        background-color: #1b1c1f;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #eee;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      .tanim {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        color: #eee;
+        background-color: #494b4d;
+        padding: 20px;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        border: 5px solid #1b1c1f;
+        border-radius: 30px;
+      }
+
+      hr {
+        margin: 10px;
+      }
+
+      .guzel-renk {
+        background-color: #fe7879;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .table td,
+      .table th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .table th {
+        background-color: darkblue;
+        color: #ffffff;
+      }
+
+      
+      .column {
+        float: left;
+        width: 33.30%;
+        padding: 20px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      /*responsive*/
+
+      @media (max-width: 500px) {
+        .table thead {
+          display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td {
+          display: block;
+          width: 100%;
+        }
+        .table tr {
+          margin-bottom: 15px;
+        }
+        .table td {
+          text-align: center;
+          position: relative;
+        }
+        .table td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #434447;
+        color: #eee;
+        padding: 15px;
+      }
+
+      .columns {
+        float: left;
+        width: 32.48%;
+        padding: 5px;
+      }
+
+      .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+      }
+
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+      }
+    </style>
   </body>
 </html>
