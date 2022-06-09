@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="guzel-renk">
+      <ul>
+        <li>
+          <h1>Erasmus Hakkında</h1>
+        </li>
+        <li>
+          <p class="tanim">
+            İnternet tabanlı uzaktan eğitim, gelişen bilgi teknolojilerinin imkânlardan faydalanılarak öğrenci ve öğretim üyesinin sanal bir sınıf ortamında mekandan bağımsız şekilde bir araya getiren, zamandan bağımsız olarak öğrenci ve öğretim üyesine eğitim materyallerine ulaşma olanağını sağlayan bir eğitim modelidir.
+            <br />
+            <br />
+          </p>
+        </li>
+        <li>
+          <div>
+            <img
+              src="https://ahgtasarim.com/wp-content/uploads/2021/02/Wordpress-Online-Egitim-Temasi.jpg"
+              alt="centered image"
+              class="image"
+            />
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .enable-circle {
+        list-style-type: circle;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #eee;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      .tanim {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        color: #eee;
+        background-color: #494b4d;
+        padding: 20px;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        border: 5px solid #1b1c1f;
+        border-radius: 30px;
+      }
+
+      hr {
+        margin: 10px;
+      }
+
+      .guzel-renk {
+        background-color: #fe7879;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .table td,
+      .table th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .table th {
+        background-color: darkblue;
+        color: #ffffff;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        padding: 20px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      /*responsive*/
+
+      @media (max-width: 500px) {
+        .table thead {
+          display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td {
+          display: block;
+          width: 100%;
+        }
+        .table tr {
+          margin-bottom: 15px;
+        }
+        .table td {
+          text-align: center;
+          position: relative;
+        }
+        .table td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #434447;
+        color: #eee;
+        padding: 15px;
+      }
+
+      .columns {
+        float: left;
+        width: 32.48%;
+        padding: 5px;
+      }
+
+      .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+      }
+
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+      }
+    </style>
+  </body>
+</html>
