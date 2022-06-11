@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="guzel-renk">
+      <ul>
+        <li>
+          <h1>Prof.Dr.Şahin Karasar Hakkında</h1>
+        </li>
+        <li>
+          <div>
+            <img
+              src="https://aday.maltepe.edu.tr/Content/hero/img-34a53df0.jpg"
+              alt="centered image"
+              class="image"
+            />
+          </div>
+        </li>
+        <li>
+          <p class="tanim">
+            1965 yılında Ankara’da doğmuştur. İlkokul, ortaokul, liseyi
+            Ankara'da, Üniversiteyi Eskişehir’de Anadolu Üniversitesi’nde,
+            şimdiki adıyla İletişim Bilimleri Fakültesi olan, Basın Yayın
+            Yüksekokulu’nda okumuştur. Lisans eğitimini tamamladıktan sonra
+            Anadolu Üniversitesi’nin yurtdışı yüksek lisans bursuyla ABD’nin
+            Wisconsin eyaletine gitmiştir. University of Wisconsin Milwaukee’de
+            yüksek lisans eğitimimi yapmıştır ve mecburi hizmetini yapmak için
+            Anadolu Üniversitesi’ne dönmüş ve araştırma görevlisi olarak
+            çalışmaya başlamıştır.
+
+            <br />
+            <br />
+
+
+            1999 yılında Anadolu Üniversitesi İletişim Bilimleri doktora
+            programını tamamlamıştır. Doktorasını bitirdikten sonra bir dönem
+            Gazi Üniversitesi’nde öğretim görevlisi olarak çalışmıştır.
+            2001-2004 yılları arasında KKTC Doğu Akdeniz Üniversitesi İletişim
+            Fakültesi’nde önce bölüm başkanı, sonra dekan yardımcısı olmuştur.
+            Sonrasında da rektör yardımcısı olarak görev yapmıştır.
+
+            <br />
+            <br />
+
+            Daha 2004 yılında Kırgızistan-Türkiye Manas Üniversitesi İletişim
+            Fakültesi’nde Radyo, Televizyon ve Sinema bölüm başkanı olarak
+            göreve başlamıştır. Oradaki görevini tamamlandıktan sonra Maltepe
+            Üniversitesi İletişim Fakültesi‘ne dekan yardımcısı olarak göreve
+            gelmiştir. Daha sonra 2005 yılından 2010 yılına kadar Güzel Sanatlar
+            Fakültesi dekanı olarak çalışmış ve 2010 yılında Türk Hava
+            Yolları’nda eğitim başkanı ve Türk Hava Yolları Akademisi başkanı
+            olarak görev yapmıştır. Burada 3 yıl çalıştıktan sonra rektör
+            yardımcısı olarak üniversiteye tekrar dönmüş ve sonrasında rektörlük
+            görevine atanmıştır..
+            <br />
+            <br />
+          </p>
+        </li>
+      </ul>
+    </header>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .enable-circle {
+        list-style-type: circle;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #eee;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      .tanim {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        color: #eee;
+        background-color: #494b4d;
+        padding: 20px;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        border: 5px solid #1b1c1f;
+        border-radius: 30px;
+      }
+
+      hr {
+        margin: 10px;
+      }
+
+      .guzel-renk {
+        background-color: #fe7879;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .table td,
+      .table th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .table th {
+        background-color: darkblue;
+        color: #ffffff;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        padding: 20px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      /*responsive*/
+
+      @media (max-width: 500px) {
+        .table thead {
+          display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td {
+          display: block;
+          width: 100%;
+        }
+        .table tr {
+          margin-bottom: 15px;
+        }
+        .table td {
+          text-align: center;
+          position: relative;
+        }
+        .table td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #434447;
+        color: #eee;
+        padding: 15px;
+      }
+
+      .columns {
+        float: left;
+        width: 32.48%;
+        padding: 5px;
+      }
+
+      .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+      }
+
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+      }
+    </style>
+  </body>
+</html>
