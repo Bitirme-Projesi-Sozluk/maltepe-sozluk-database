@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="guzel-renk">
+      <ul>
+        <li>
+          <h1>İoanna Kuçuradi Hakkında</h1>
+        </li>
+        <li>
+          <div>
+            <img
+              src="https://i4.hurimg.com/i/hurriyet/75/750x422/5825984fc03c0e1528e3ae20.jpg"
+              alt="centered image"
+              class="image"
+            />
+          </div>
+        </li>
+        <li>
+          <p class="tanim">
+            İoanna Kuçuradi, 4 Ekim 1936 tarihinde İstanbul’da dünyaya
+            gelmiştir. 1954 senesinde Zapyon Kız Lisesi’ni bitirmiştir. 1959
+            senesinde İstanbul Üniversitesi Felsefe Bölümü’nden mezun olduktan
+            sonra 1965 senesinde doktora derecesini almıştır. 1965-1968 yılları
+            arasında Erzurum Atatürk Üniversitesi’nde görev yapan Kuçuradi,
+            1970’de doçent, 1978’de profesör olmuştur.
+            <br />
+            <br />
+            Boston’da düzenlenen bir toplantı sonucunda Dünya Felsefe
+            Federasyonları Başkanlığına seçilmiştir. İoanna Kuçuradi, bu göreve
+            seçilen ilk Türk ve ilk kadındır.
+            <br />
+            <br />
+            İoanna Kuçuradi, 1969 senesinde kurduğu Hacettepe Üniversitesi
+            Felsefe Bölümü’nde, emekli olduğu 2003 senesine kadar çalışmıştır.
+            1997 senesinden bu yana da aynı üniversitenin İnsan Hakları ve
+            Felsefesi Uygulama ve Araştırma Merkezi'nin müdürü ve bu merkezin
+            bünyesinde kurulan UNESCO kürsüsünün sahibidir. 1997'den beri
+            Maltepe Üniversitesinde İnsan Hakları ve Felsefesi Uygulama ve
+            Araştırma Merkezinin yöneticiliğini yapmaktadır ve bu merkez
+            bünyesinde kurulan UNESCO kürsüsünün başkanıdır. Ayrıca Koç
+            Üniversitesi mütevelli heyeti üyesidir. 2015 yılında ODTÜ tarafından
+            kendisine "Senato Özel Ödülü" verilmiştir.
+          </p>
+        </li>
+      </ul>
+    </header>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .enable-circle {
+        list-style-type: circle;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #eee;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      .tanim {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        color: #eee;
+        background-color: #494b4d;
+        padding: 20px;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 5px solid #1b1c1f;
+        border-radius: 30px;
+      }
+
+      hr {
+        margin: 10px;
+      }
+
+      .guzel-renk {
+        background-color: #fe7879;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .table td,
+      .table th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .table th {
+        background-color: darkblue;
+        color: #ffffff;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        padding: 20px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      /*responsive*/
+
+      @media (max-width: 500px) {
+        .table thead {
+          display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td {
+          display: block;
+          width: 100%;
+        }
+        .table tr {
+          margin-bottom: 15px;
+        }
+        .table td {
+          text-align: center;
+          position: relative;
+        }
+        .table td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #434447;
+        color: #eee;
+        padding: 15px;
+      }
+
+      .columns {
+        float: left;
+        width: 32.48%;
+        padding: 5px;
+      }
+
+      .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+      }
+
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+      }
+    </style>
+  </body>
+</html>

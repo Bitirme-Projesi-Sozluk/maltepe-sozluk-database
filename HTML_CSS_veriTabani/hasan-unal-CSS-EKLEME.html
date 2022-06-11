@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="guzel-renk">
+      <ul>
+        <li>
+          <h1>Prof. Dr. Hasan Ünal Hakkında</h1>
+        </li>
+        <li>
+          <div>
+            <img
+              src="https://pbs.twimg.com/profile_images/958783757691031553/cM_D0Oa2_400x400.jpg"
+              alt="centered image"
+              class="image"
+            />
+          </div>
+        </li>
+        <li>
+          <p class="tanim">
+            Prof. Dr. Hasan Ünal, İstanbul Üniversitesi Tarih Bölümü'nden 1981
+            yılında mezun olmuştur. Doktorasını 1986-1993 yılları arasında
+            İngiltere’nin Manchester Üniversitesi’nde yapmıştır. Türkiye’ye
+            dönüşünde Ankara Bilkent Üniversitesi’nin Uluslararası İlişkiler
+            Bölümü’nde göreve başlayan Ünal, Ankara Gazi Üniversitesi
+            Uluslararası İlişkiler Bölümü’ne geçtiği 2008 yılına kadar burada
+            çalışmıştır. Gazi ve sonra da Atılım Üniversitesi’nde toplamda 10
+            çalışan Ünal 2018 yılında İstanbul Maltepe Üniversitesi Siyaset
+            Bilimi ve Uluslararası İlişkiler Bölümü’ne geçmiş olup halen söz
+            konusu üniversitede çalışmalarını sürdürmektedir.
+            <br />
+            <br />
+            Prof. Dr. Hasan Ünal, akıcı bir İngilizceye sahiptir ve ayrıca
+            akademik çalışmalarını yürütecek düzeyde Fransızca ve Yunanca
+            bilmektedir.
+            <br />
+            <br />
+          </p>
+        </li>
+      </ul>
+    </header>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .enable-circle {
+        list-style-type: circle;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #eee;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      .tanim {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        color: #eee;
+        background-color: #494b4d;
+        padding: 20px;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        border: 5px solid #1b1c1f;
+        border-radius: 30px;
+      }
+
+      hr {
+        margin: 10px;
+      }
+
+      .guzel-renk {
+        background-color: #fe7879;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .table td,
+      .table th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .table th {
+        background-color: darkblue;
+        color: #ffffff;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        padding: 20px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      /*responsive*/
+
+      @media (max-width: 500px) {
+        .table thead {
+          display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td {
+          display: block;
+          width: 100%;
+        }
+        .table tr {
+          margin-bottom: 15px;
+        }
+        .table td {
+          text-align: center;
+          position: relative;
+        }
+        .table td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #434447;
+        color: #eee;
+        padding: 15px;
+      }
+
+      .columns {
+        float: left;
+        width: 32.48%;
+        padding: 5px;
+      }
+
+      .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+      }
+
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+      }
+    </style>
+  </body>
+</html>

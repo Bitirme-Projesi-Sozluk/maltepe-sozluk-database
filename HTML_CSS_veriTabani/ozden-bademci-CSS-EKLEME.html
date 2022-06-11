@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="guzel-renk">
+      <ul>
+        <li>
+          <h1>Doç. Dr. Özden Bademci Hakkında</h1>
+        </li>
+        <li>
+          <div>
+            <img
+              src="https://kortopsikoloji.com/wp-content/uploads/2017/05/klinik-psikolog-dr-ozden-bademci.jpg.webp"
+              alt="centered image"
+              class="image"
+            />
+          </div>
+        </li>
+        <li>
+          <p class="tanim">
+            Doç Dr. Özden Bademci, 1996 yılında Ege Üniversitesi Psikoloji
+            Bölümü’nden mezun olmuştur. 1998-2002 Yılları arasında Tavistock
+            Klinik ve University of East London ile sürdürülen “Psikanalitik
+            Gözlemsel Çalışmalar” yüksek lisans programını tamamlamıştır.
+            Tavistock Klinik’te iki yıl boyunca deneyimsel grup terapilerine ve
+            öğrenmede etkili olan bilinçdışı faktörlerin ele alındığı yüksek
+            lisans programına devam etmiştir. Doktora derecesini 2010 yılında
+            University of Kent’den (İngiltere) almıştır. 2018 Yılında klinik
+            psikoloji alanında doçent olmuştur. Bilinçli farkındalık temelli
+            ileri düzey beden psikoterapisi eğitimi almıştır. Peter Levine
+            tarafından geliştirilen “Somatik Deneyimleme” Somatic Experiencing),
+            Dr. Gabor Mate tarafından geliştirilen “Şefkatle Soruşturma”
+            (Compassionate Inquiry) terapi yaklaşımları başta olmak üzere
+            Babette Rothschild, Thomas Hübl gibi uzmanlardan beden-odaklı terapi
+            eğitimleri almıştır. Doç Dr. Özden Bademci yetişkinlerle
+            beden-odaklı psikanalitik yaklaşımla çalışmaktadır.
+            <br />
+            <br />
+            2010 Yılında Maltepe Üniversitesi Sokakta Yaşayan ve Çalışan
+            Çocuklar için Uygulama ve Araştırma Merkezini (SOYAÇ) kurmuştur.
+            2019 Yılında NHS Trust East London işbirliğiyle Türkiye’de ilk kez
+            uluslararası beden psikoterapisi sertifikalı klinik psikoloji yüksek
+            lisans programının oluşturulmasına öncülük etmiştir. Koordinatörü
+            olduğu beden-odaklı klinik psikoloji yüksek lisans programı ile
+            kurucu müdürü olduğu SOYAÇ çalışmalarını birleştiren toplum temelli
+            projeler yapmakta “bedenlenen sosyal adalet” (embodied social
+            justice) üzerine çalışmaktadır. Doç Dr. Özden Bademci’ye 2017
+            yılında, British Council tarafından insanların hayatını iyileştirme
+            ve toplumsal değişime katkılarından ötürü Toplumsal Etki Ödülü
+            verilmiştir.
+            <br />
+            <br />
+          </p>
+        </li>
+      </ul>
+    </header>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .enable-circle {
+        list-style-type: circle;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #eee;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      span {
+        font-weight: bold;
+      }
+      .tanim {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        color: #eee;
+        background-color: #494b4d;
+        padding: 20px;
+      }
+
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        border: 5px solid #1b1c1f;
+        border-radius: 30px;
+      }
+
+      hr {
+        margin: 10px;
+      }
+
+      .guzel-renk {
+        background-color: #fe7879;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .table td,
+      .table th {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .table th {
+        background-color: darkblue;
+        color: #ffffff;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        padding: 20px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      /*responsive*/
+
+      @media (max-width: 500px) {
+        .table thead {
+          display: none;
+        }
+
+        .table,
+        .table tbody,
+        .table tr,
+        .table td {
+          display: block;
+          width: 100%;
+        }
+        .table tr {
+          margin-bottom: 15px;
+        }
+        .table td {
+          text-align: center;
+          position: relative;
+        }
+        .table td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #434447;
+        color: #eee;
+        padding: 15px;
+      }
+
+      .columns {
+        float: left;
+        width: 32.48%;
+        padding: 5px;
+      }
+
+      .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+      }
+
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+      }
+    </style>
+  </body>
+</html>
