@@ -8,12 +8,12 @@
   </head>
   <body>
     <header class="guzel-renk">
-      <ul>
+      <ul id="aciklama">
         <li>
           <h1 id="baslik1">Bölüm Hakkında</h1>
         </li>
-        <li>
-          <p class="tanim" id="aciklama">
+        <li id="iki">
+          <p class="tanim">
             Adalet programı, öğrencilerine, hukukun temel alanları ile ilgili
             olarak genel teorik bilgi vermenin yanı sıra, hukuk uygulamasında
             kullanacakları pratik bilgi ve beceriyi de kazandırmaktadır. 4
@@ -39,17 +39,17 @@
     <hr />
 
     <div class="guzel-renk">
-      <ul>
+      <ul id="danisma">
         <li>
-          <h2 id="baslik2">Danışma Kurulu</h2>
+          <h2>Danışma Kurulu</h2>
         </li>
         <li>
-          <table class="table" id="danisman">
+          <table class="table">
             <thead>
               <tr>
-                <td style="font-weight: bold;"><b>Adı Soyadı</b></td>
-                <td style="font-weight: bold;"><b>Çalıştığı Firma</b></td>
-                <td style="font-weight: bold;"><b>Görev/Pozisyon</b></td>
+                <td><b>Adı Soyadı</b></td>
+                <td><b>Çalıştığı Firma</b></td>
+                <td><b>Görev/Pozisyon</b></td>
               </tr>
             </thead>
             <tbody>
@@ -108,10 +108,10 @@
     <hr />
 
     <div class="guzel-renk">
-      <ul>
-        <li><h2 id="baslik3">Program Temel Öğrenme Çıktıları</h2></li>
+      <ul id="ciktilar">
+        <li><h2>Program Temel Öğrenme Çıktıları</h2></li>
         <li>
-          <ul class="enable-circle" id="ciktilar">
+          <ul class="enable-circle">
             <li>
               Kamu Hukuku ve Özel Hukuk ayrımı ve bu ayrımın sonuçları hakkında
               bilgi sahibi olur. <br />
@@ -180,12 +180,12 @@
     <hr />
 
     <div class="guzel-renk">
-      <ul>
+      <ul id="dgs">
         <li>
-          <h2 id="baslik4">DGS ile Geçilebilecek Bölümler</h2>
+          <h2>DGS ile Geçilebilecek Bölümler</h2>
         </li>
         <li>
-          <ul class="enable-circle" id="dgs">
+          <ul class="enable-circle">
             <li>Hukuk Fakültesi</li>
             <li>Çalışma Ekonomisi ve Endüstri İlişkileri</li>
             <li>İktisat</li>
@@ -204,8 +204,8 @@
     <hr />
 
     <div class="guzel-renk">
-      <ul>
-        <li><h2 id="baslik5">Adalet</h2></li>
+      <ul id="ucretler">
+        <li><h2>Adalet</h2></li>
         <li>
           <div class="column">
             <div class="card">
@@ -248,32 +248,43 @@
       * {
         box-sizing: border-box !important;
       }
-      .enable-circle {
-        list-style-type: circle !important;
+
+      #iki {
+        margin-bottom: 1% !important;
       }
 
-      #baslik1,
-      #baslik2,
-      #baslik3,
-      #baslik4,
-      #baslik5 {
-        color: var(—heading-Colour) !important;
+      #iki p{
+        font-size: medium !important;
       }
 
       #aciklama,
-      #danisman,
+      #danisma,
       #ciktilar,
-      #dgs {
-        color: var(—text-Colour) !important;
+      #dgs,
+      #ucretler {
+        margin-top: 1% !important;
+        margin-bottom: 1% !important;
+      }
+      
+      #ciktilar li,
+      #dgs li {
+        margin-top:1rem !important;
+      }
+
+      .enable-circle {
+        list-style-type: circle !important;
       }
 
       h1,
       h2 {
         text-align: center !important;
-        /* color: #eee !important; */
+        color: #eee !important;
         width: 95% !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        margin-bottom: 2% !important;
+        font-size: x-large !important;
+        font-family: 'Roboto Slab', 'sans' !important;
       }
 
       span {
@@ -283,7 +294,7 @@
         margin-left: auto !important;
         margin-right: auto !important;
         width: 95% !important;
-        /* color: #eee !important; */
+        color: #eee !important;
         background-color: #494b4d !important;
         padding: 20px !important;
       }
@@ -322,7 +333,7 @@
 
       .table th {
         background-color: darkblue !important;
-        /* color: #ffffff !important; */
+        color: #ffffff !important;
       }
 
       .column {
@@ -385,7 +396,7 @@
         margin-left: auto !important;
         margin-right: auto !important;
         background-color: #434447 !important;
-        /* color: #eee !important; */
+        color: #eee !important;
         padding: 15px !important;
       }
 
