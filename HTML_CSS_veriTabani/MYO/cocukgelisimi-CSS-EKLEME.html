@@ -8,11 +8,11 @@
   </head>
   <body>
     <header class="guzel-renk">
-      <ul>
+      <ul id="aciklama">
         <li>
           <h1>Bölüm Hakkında</h1>
         </li>
-        <li>
+        <li id="iki">
           <p class="tanim">
             Çocuk Gelişimi Programı, çocukların sağlıklı bir ortamda
             yaşayabilmeleri için eğitime ve danışmanlığa duyulan ihtiyacı
@@ -43,7 +43,7 @@
     <hr />
 
     <div class="guzel-renk">
-      <ul>
+      <ul id="danisma">
         <li>
           <h2>Danışma Kurulu</h2>
         </li>
@@ -51,9 +51,9 @@
           <table class="table">
             <thead>
               <tr>
-                <td style="color: #111"><b>Adı Soyadı</b></td>
-                <td style="color: #111"><b>Çalıştığı Firma</b></td>
-                <td style="color: #111"><b>Görev/Pozisyon</b></td>
+                <td><b>Adı Soyadı</b></td>
+                <td><b>Çalıştığı Firma</b></td>
+                <td><b>Görev/Pozisyon</b></td>
               </tr>
             </thead>
             <tbody>
@@ -114,7 +114,7 @@
     <hr />
 
     <div class="guzel-renk">
-      <ul>
+      <ul id="ciktilar">
         <li><h2>Program Temel Öğrenme Çıktıları</h2></li>
         <li>
           <ul class="enable-circle">
@@ -208,7 +208,7 @@
     <hr />
 
     <div class="guzel-renk">
-      <ul>
+      <ul id="dgs">
         <li>
           <h2>DGS ile Geçilebilecek Bölümler</h2>
         </li>
@@ -227,7 +227,7 @@
     <hr />
 
     <div class="row guzel-renk">
-      <ul>
+      <ul id="ucretler">
         <li><h2>Çocuk Gelişimi</h2></li>
         <li>
           <div class="column">
@@ -269,167 +269,193 @@
 
     <style>
       * {
-        box-sizing: border-box;
+        box-sizing: border-box !important;
       }
+
+      #iki {
+        margin-bottom: 1% !important;
+      }
+
+      #iki p{
+        font-size: medium !important;
+      }
+
+      #aciklama,
+      #danisma,
+      #ciktilar,
+      #dgs,
+      #ucretler {
+        margin-top: 1% !important;
+        margin-bottom: 1% !important;
+      }
+      
+      #ciktilar li,
+      #dgs li {
+        margin-top:1rem !important;
+      }
+
       .enable-circle {
-        list-style-type: circle;
+        list-style-type: circle !important;
       }
 
       h1,
       h2 {
-        text-align: center;
-        color: #eee;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center !important;
+        color: #eee !important;
+        width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 2% !important;
+        font-size: x-large !important;
+        font-family: 'Roboto Slab', 'sans' !important;
       }
 
       span {
-        font-weight: bold;
+        font-weight: bold !important;
       }
       .tanim {
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        color: #eee;
-        background-color: #494b4d;
-        padding: 20px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 95% !important;
+        color: #eee !important;
+        background-color: #494b4d !important;
+        padding: 20px !important;
       }
 
       .image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-        border: 5px solid #1b1c1f;
-        border-radius: 30px;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 75% !important;
+        border: 5px solid #1b1c1f !important;
+        border-radius: 30px !important;
       }
 
       hr {
-        margin: 10px;
+        margin: 10px !important;
       }
 
       .guzel-renk {
-        background-color: #fe7879;
-        border-radius: 20px;
-        padding: 15px;
+        background-color: #fe7879 !important;
+        border-radius: 20px !important;
+        padding: 15px !important;
       }
 
       .table {
-        width: 100%;
-        border-collapse: collapse;
+        width: 100% !important;
+        border-collapse: collapse !important;
       }
 
       .table td,
       .table th {
-        padding: 12px 15px;
-        border: 1px solid #ddd;
-        text-align: center;
-        font-size: 16px;
+        padding: 12px 15px !important;
+        border: 1px solid #ddd !important;
+        text-align: center !important;
+        font-size: 16px !important;
       }
 
       .table th {
-        background-color: darkblue;
-        color: #ffffff;
+        background-color: darkblue !important;
+        color: #ffffff !important;
       }
 
       .column {
-        float: left;
-        width: 33.3%;
-        padding: 20px;
+        float: left !important;
+        width: 33.3% !important;
+        padding: 20px !important;
       }
 
       .row:after {
-        content: "";
-        display: table;
-        clear: both;
+        content: "" !important;
+        display: table !important;
+        clear: both !important;
       }
 
       .card {
-        text-align: center;
+        text-align: center !important;
       }
 
       /*responsive*/
 
       @media (max-width: 500px) {
         .table thead {
-          display: none;
+          display: none !important;
         }
 
         .table,
         .table tbody,
         .table tr,
         .table td {
-          display: block;
-          width: 100%;
+          display: block !important;
+          width: 100% !important;
         }
         .table tr {
-          margin-bottom: 15px;
+          margin-bottom: 15px !important;
         }
         .table td {
-          text-align: center;
-          position: relative;
+          text-align: center !important;
+          position: relative !important;
         }
         .table td::before {
-          content: attr(data-label);
-          position: absolute;
-          left: 0;
-          width: 50%;
-          padding-left: 15px;
-          font-size: 15px;
-          font-weight: bold;
-          text-align: left;
+          content: attr(data-label) !important;
+          position: absolute !important;
+          left: 0 !important;
+          width: 50% !important;
+          padding-left: 15px !important;
+          font-size: 15px !important;
+          font-weight: bold !important;
+          text-align: left !important;
         }
 
         .column {
-          width: 100%;
-          display: block;
+          width: 100% !important;
+          display: block !important;
         }
       }
 
       ul {
-        list-style-type: none;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #434447;
-        color: #eee;
-        padding: 15px;
+        list-style-type: none !important;
+        width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        background-color: #434447 !important;
+        color: #eee !important;
+        padding: 15px !important;
       }
 
       .columns {
-        float: left;
-        width: 32.48%;
-        padding: 5px;
+        float: left !important;
+        width: 32.48% !important;
+        padding: 5px !important;
       }
 
       .price {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
+        list-style-type: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-transition: 0.3s !important;
+        transition: 0.3s !important;
       }
 
       .price:hover {
-        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2) !important;
       }
 
       .price .header {
-        background-color: #111;
-        color: white;
-        font-size: 25px;
+        background-color: #111 !important;
+        color: white !important;
+        font-size: 25px !important;
       }
 
       .price li {
-        border-bottom: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
+        border-bottom: 1px solid #eee !important;
+        padding: 20px !important;
+        text-align: center !important;
       }
 
       .price .grey {
-        background-color: #eee;
-        font-size: 20px;
+        background-color: #eee !important;
+        font-size: 20px !important;
       }
     </style>
   </body>
